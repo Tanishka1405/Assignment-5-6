@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+
+    <div id="converter-container">
+
+      <h1>Currency Converter</h1>
+
+      <div id="boxes">
+        <div class="currency-box" id="usd-box">
+          <span class="currency-name">US Dollars (USD)</span>
+          <input type="number" id="USD" placeholder="Enter amount" required />
+          <button onclick="conUSD_to_CAD()">CAD CONVERT</button>
+        </div>
+
+        <div class="currency-box" id="cad-box">
+          <span class="currency-name">Canadian Dollars (CAD)</span>
+          <input type="number" id="CAD" placeholder="Enter amount" required />
+          <button onclick="conCAD_to_USD()">USD CONVERT</button>
+        </div>
+
+    <script src="CurrConv.js"></script>
+  </body>
+</html>
